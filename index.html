@@ -1,0 +1,96 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <!--הטמעת בוטסטראפ-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1>פתרונות למידה שתפורים לצרכים שלך</h1>
+                <p>אספנו עבורך את פתרונות הלמידה הכי שימושיים. <strong>כל מה שצריך לעשות זה לבחור את צרכי הלמידה שלך.</strong></p>
+            </blockquote>
+        </figure>
+        <div class="content">
+            <div class="menu-container">
+                <!--צקבוקסים לסינון לפי צרכי הלמידה-->
+                <h3>ערכים לסינון</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                שינוי התנהגותי
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input type="checkbox" class="checkBoxClass" id="knowledgeCB" name="CBG" value="knowledge=1">
+                                    <label for="knowledgeCB">ידע</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="checkBoxClass" id="perceptionCB" name="CBG" value="perception=1">
+                                    <label for="perceptionCB">תפיסה</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="checkBoxClass" id="proficiencyCB" name="CBG" value="proficiency=1">
+                                    <label for="proficiencyCB">מיומנות</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                תנאי הלמידה
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input type="checkbox" class="checkBoxClass" id="anyTimeAnyWhereCB" name="CBG" value="anyTimeAnyWhere=1">
+                                    <label for="anyTimeAnyWhereCB">מכל מקום ומכל זמן</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="checkBoxClass" id="complexity_highCB" name="CBG" value="complexity_high=1">
+                                    <label for="complexity_highCB">מורכבות תוכן גבוהה</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="result-container">
+                <!--שורת חיפוש וכפתור לחיפוש ממוקד של פתרון מסוים-->
+                <div class="search-container">
+                    <p>חיפוש פתרון רצוי</p>
+                    <input id="userSolutionTxt" type="text" placeholder="מה הפתרון הרצוי לחיפוש?" />
+                    <button id="solutionBTM" type="button" class="btn btn-warning">חיפוש</button>
+                </div>
+                <!--דיב להצגת התוצאה-->
+                <div id="Feedbacklbl" class="list"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
